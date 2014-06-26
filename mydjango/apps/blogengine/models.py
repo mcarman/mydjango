@@ -48,17 +48,16 @@ class Post(models.Model):
     pub_date = models.DateTimeField()
     text = models.TextField()
     slug = models.SlugField(max_length=40, unique=True)
-    # author = models.ForeignKey(User)
+    author = models.ForeignKey(User)
     # site = models.ForeignKey(Site)
     # category = models.ForeignKey(Category, blank=True, null=True)
     # tags = models.ManyToManyField(Tag, blank=True, null=True)
 
-    # def get_absolute_url(self):
-    #     return "/%s/%s/%s/" % (self.pub_date.year, self.pub_date.month, self.slug)
+    def get_absolute_url(self):
+        return "/%s/%s/%s/" % (self.pub_date.year, self.pub_date.month, self.slug)
 
-    # def __unicode__(self):
-    #     return self.title
+    def __unicode__(self):
+        return self.title
 
-    # class Meta:
-    #     ordering = ["-pub_date"]
-# Create your models here.
+    class Meta:
+        ordering = ["-pub_date"]

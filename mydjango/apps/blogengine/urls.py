@@ -22,11 +22,11 @@ urlpatterns = patterns('',
         model=Category,
         )),
 
-#     # Tags
-#     url(r'^tag/(?P<slug>[a-zA-Z0-9-]+)/?$', TagListView.as_view(
-#         paginate_by=5,
-#         model=Tag,
-#         )),
+    # Tags
+    url(r'^tag/(?P<slug>[a-zA-Z0-9-]+)/?$', TagListView.as_view(
+        paginate_by=5,
+        model=Tag,
+        )),
 
 #     # Post RSS feed
 #     url(r'^feeds/posts/$', PostsFeed()),

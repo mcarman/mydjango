@@ -18,3 +18,9 @@ db.sqlite3
 # Celerybeat scheduler file:
 celerybeat-schedule
 
+#bower configs
+bower.json
+
+# unmodified boiler plate or std files
+mydjango/assets/bower_components/
+mydjango/assets/jquery/

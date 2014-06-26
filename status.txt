@@ -1,0 +1,214 @@
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    assets/bower_components/bootstrap/.bower.json
+#	deleted:    assets/bower_components/bootstrap/Gruntfile.js
+#	deleted:    assets/bower_components/bootstrap/LICENSE
+#	deleted:    assets/bower_components/bootstrap/README.md
+#	deleted:    assets/bower_components/bootstrap/bower.json
+#	deleted:    assets/bower_components/bootstrap/dist/css/bootstrap-theme.css
+#	deleted:    assets/bower_components/bootstrap/dist/css/bootstrap-theme.css.map
+#	deleted:    assets/bower_components/bootstrap/dist/css/bootstrap-theme.min.css
+#	deleted:    assets/bower_components/bootstrap/dist/css/bootstrap.css
+#	deleted:    assets/bower_components/bootstrap/dist/css/bootstrap.css.map
+#	deleted:    assets/bower_components/bootstrap/dist/css/bootstrap.min.css
+#	deleted:    assets/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot
+#	deleted:    assets/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg
+#	deleted:    assets/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf
+#	deleted:    assets/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
+#	deleted:    assets/bower_components/bootstrap/dist/js/bootstrap.js
+#	deleted:    assets/bower_components/bootstrap/dist/js/bootstrap.min.js
+#	deleted:    assets/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot
+#	deleted:    assets/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg
+#	deleted:    assets/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf
+#	deleted:    assets/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff
+#	deleted:    assets/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js
+#	deleted:    assets/bower_components/bootstrap/grunt/bs-lessdoc-parser.js
+#	deleted:    assets/bower_components/bootstrap/grunt/bs-raw-files-generator.js
+#	deleted:    assets/bower_components/bootstrap/grunt/shrinkwrap.js
+#	deleted:    assets/bower_components/bootstrap/js/affix.js
+#	deleted:    assets/bower_components/bootstrap/js/alert.js
+#	deleted:    assets/bower_components/bootstrap/js/button.js
+#	deleted:    assets/bower_components/bootstrap/js/carousel.js
+#	deleted:    assets/bower_components/bootstrap/js/collapse.js
+#	deleted:    assets/bower_components/bootstrap/js/dropdown.js
+#	deleted:    assets/bower_components/bootstrap/js/modal.js
+#	deleted:    assets/bower_components/bootstrap/js/popover.js
+#	deleted:    assets/bower_components/bootstrap/js/scrollspy.js
+#	deleted:    assets/bower_components/bootstrap/js/tab.js
+#	deleted:    assets/bower_components/bootstrap/js/tooltip.js
+#	deleted:    assets/bower_components/bootstrap/js/transition.js
+#	deleted:    assets/bower_components/bootstrap/less/alerts.less
+#	deleted:    assets/bower_components/bootstrap/less/badges.less
+#	deleted:    assets/bower_components/bootstrap/less/bootstrap.less
+#	deleted:    assets/bower_components/bootstrap/less/breadcrumbs.less
+#	deleted:    assets/bower_components/bootstrap/less/button-groups.less
+#	deleted:    assets/bower_components/bootstrap/less/buttons.less
+#	deleted:    assets/bower_components/bootstrap/less/carousel.less
+#	deleted:    assets/bower_components/bootstrap/less/close.less
+#	deleted:    assets/bower_components/bootstrap/less/code.less
+#	deleted:    assets/bower_components/bootstrap/less/component-animations.less
+#	deleted:    assets/bower_components/bootstrap/less/dropdowns.less
+#	deleted:    assets/bower_components/bootstrap/less/forms.less
+#	deleted:    assets/bower_components/bootstrap/less/glyphicons.less
+#	deleted:    assets/bower_components/bootstrap/less/grid.less
+#	deleted:    assets/bower_components/bootstrap/less/input-groups.less
+#	deleted:    assets/bower_components/bootstrap/less/jumbotron.less
+#	deleted:    assets/bower_components/bootstrap/less/labels.less
+#	deleted:    assets/bower_components/bootstrap/less/list-group.less
+#	deleted:    assets/bower_components/bootstrap/less/media.less
+#	deleted:    assets/bower_components/bootstrap/less/mixins.less
+#	deleted:    assets/bower_components/bootstrap/less/modals.less
+#	deleted:    assets/bower_components/bootstrap/less/navbar.less
+#	deleted:    assets/bower_components/bootstrap/less/navs.less
+#	deleted:    assets/bower_components/bootstrap/less/normalize.less
+#	deleted:    assets/bower_components/bootstrap/less/pager.less
+#	deleted:    assets/bower_components/bootstrap/less/pagination.less
+#	deleted:    assets/bower_components/bootstrap/less/panels.less
+#	deleted:    assets/bower_components/bootstrap/less/popovers.less
+#	deleted:    assets/bower_components/bootstrap/less/print.less
+#	deleted:    assets/bower_components/bootstrap/less/progress-bars.less
+#	deleted:    assets/bower_components/bootstrap/less/responsive-utilities.less
+#	deleted:    assets/bower_components/bootstrap/less/scaffolding.less
+#	deleted:    assets/bower_components/bootstrap/less/tables.less
+#	deleted:    assets/bower_components/bootstrap/less/theme.less
+#	deleted:    assets/bower_components/bootstrap/less/thumbnails.less
+#	deleted:    assets/bower_components/bootstrap/less/tooltip.less
+#	deleted:    assets/bower_components/bootstrap/less/type.less
+#	deleted:    assets/bower_components/bootstrap/less/utilities.less
+#	deleted:    assets/bower_components/bootstrap/less/variables.less
+#	deleted:    assets/bower_components/bootstrap/less/wells.less
+#	deleted:    assets/bower_components/bootstrap/package.json
+#	deleted:    assets/bower_components/bootstrap/test-infra/README.md
+#	deleted:    assets/bower_components/bootstrap/test-infra/npm-shrinkwrap.canonical.json
+#	deleted:    assets/bower_components/bootstrap/test-infra/requirements.txt
+#	deleted:    assets/bower_components/bootstrap/test-infra/s3_cache.py
+#	deleted:    assets/bower_components/bootstrap/test-infra/sauce_browsers.yml
+#	deleted:    assets/bower_components/bootstrap/test-infra/uncached-npm-install.sh
+#	deleted:    assets/bower_components/html5-boilerplate/.bower.json
+#	deleted:    assets/bower_components/html5-boilerplate/.gitattributes
+#	deleted:    assets/bower_components/html5-boilerplate/.gitignore
+#	deleted:    assets/bower_components/html5-boilerplate/.htaccess
+#	deleted:    assets/bower_components/html5-boilerplate/404.html
+#	deleted:    assets/bower_components/html5-boilerplate/CHANGELOG.md
+#	deleted:    assets/bower_components/html5-boilerplate/CONTRIBUTING.md
+#	deleted:    assets/bower_components/html5-boilerplate/LICENSE.md
+#	deleted:    assets/bower_components/html5-boilerplate/README.md
+#	deleted:    assets/bower_components/html5-boilerplate/apple-touch-icon-precomposed.png
+#	deleted:    assets/bower_components/html5-boilerplate/crossdomain.xml
+#	deleted:    assets/bower_components/html5-boilerplate/css/main.css
+#	deleted:    assets/bower_components/html5-boilerplate/css/normalize.css
+#	deleted:    assets/bower_components/html5-boilerplate/doc/TOC.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/crossdomain.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/css.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/extend.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/faq.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/html.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/js.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/misc.md
+#	deleted:    assets/bower_components/html5-boilerplate/doc/usage.md
+#	deleted:    assets/bower_components/html5-boilerplate/favicon.ico
+#	deleted:    assets/bower_components/html5-boilerplate/humans.txt
+#	deleted:    assets/bower_components/html5-boilerplate/index.html
+#	deleted:    assets/bower_components/html5-boilerplate/js/main.js
+#	deleted:    assets/bower_components/html5-boilerplate/js/plugins.js
+#	deleted:    assets/bower_components/html5-boilerplate/js/vendor/jquery-1.10.2.min.js
+#	deleted:    assets/bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js
+#	deleted:    assets/bower_components/html5-boilerplate/robots.txt
+#	renamed:    assets/bower_components/jquery/.bower.json -> mydjango/assets/java/jquery/.bower.json
+#	renamed:    assets/bower_components/jquery/MIT-LICENSE.txt -> mydjango/assets/java/jquery/MIT-LICENSE.txt
+#	renamed:    assets/bower_components/jquery/bower.json -> mydjango/assets/java/jquery/bower.json
+#	renamed:    assets/bower_components/jquery/dist/jquery.js -> mydjango/assets/java/jquery/dist/jquery.js
+#	renamed:    assets/bower_components/jquery/dist/jquery.min.js -> mydjango/assets/java/jquery/dist/jquery.min.js
+#	renamed:    assets/bower_components/jquery/dist/jquery.min.map -> mydjango/assets/java/jquery/dist/jquery.min.map
+#	renamed:    assets/bower_components/jquery/src/ajax.js -> mydjango/assets/java/jquery/src/ajax.js
+#	renamed:    assets/bower_components/jquery/src/ajax/jsonp.js -> mydjango/assets/java/jquery/src/ajax/jsonp.js
+#	renamed:    assets/bower_components/jquery/src/ajax/load.js -> mydjango/assets/java/jquery/src/ajax/load.js
+#	renamed:    assets/bower_components/jquery/src/ajax/parseJSON.js -> mydjango/assets/java/jquery/src/ajax/parseJSON.js
+#	renamed:    assets/bower_components/jquery/src/ajax/parseXML.js -> mydjango/assets/java/jquery/src/ajax/parseXML.js
+#	renamed:    assets/bower_components/jquery/src/ajax/script.js -> mydjango/assets/java/jquery/src/ajax/script.js
+#	renamed:    assets/bower_components/jquery/src/ajax/var/nonce.js -> mydjango/assets/java/jquery/src/ajax/var/nonce.js
+#	renamed:    assets/bower_components/jquery/src/ajax/var/rquery.js -> mydjango/assets/java/jquery/src/ajax/var/rquery.js
+#	renamed:    assets/bower_components/jquery/src/ajax/xhr.js -> mydjango/assets/java/jquery/src/ajax/xhr.js
+#	renamed:    assets/bower_components/jquery/src/attributes.js -> mydjango/assets/java/jquery/src/attributes.js
+#	renamed:    assets/bower_components/jquery/src/attributes/attr.js -> mydjango/assets/java/jquery/src/attributes/attr.js
+#	renamed:    assets/bower_components/jquery/src/attributes/classes.js -> mydjango/assets/java/jquery/src/attributes/classes.js
+#	renamed:    assets/bower_components/jquery/src/attributes/prop.js -> mydjango/assets/java/jquery/src/attributes/prop.js
+#	renamed:    assets/bower_components/jquery/src/attributes/support.js -> mydjango/assets/java/jquery/src/attributes/support.js
+#	renamed:    assets/bower_components/jquery/src/attributes/val.js -> mydjango/assets/java/jquery/src/attributes/val.js
+#	renamed:    assets/bower_components/jquery/src/callbacks.js -> mydjango/assets/java/jquery/src/callbacks.js
+#	renamed:    assets/bower_components/jquery/src/core.js -> mydjango/assets/java/jquery/src/core.js
+#	renamed:    assets/bower_components/jquery/src/core/access.js -> mydjango/assets/java/jquery/src/core/access.js
+#	renamed:    assets/bower_components/jquery/src/core/init.js -> mydjango/assets/java/jquery/src/core/init.js
+#	renamed:    assets/bower_components/jquery/src/core/parseHTML.js -> mydjango/assets/java/jquery/src/core/parseHTML.js
+#	renamed:    assets/bower_components/jquery/src/core/ready.js -> mydjango/assets/java/jquery/src/core/ready.js
+#	renamed:    assets/bower_components/jquery/src/core/var/rsingleTag.js -> mydjango/assets/java/jquery/src/core/var/rsingleTag.js
+#	renamed:    assets/bower_components/jquery/src/css.js -> mydjango/assets/java/jquery/src/css.js
+#	renamed:    assets/bower_components/jquery/src/css/addGetHookIf.js -> mydjango/assets/java/jquery/src/css/addGetHookIf.js
+#	renamed:    assets/bower_components/jquery/src/css/curCSS.js -> mydjango/assets/java/jquery/src/css/curCSS.js
+#	renamed:    assets/bower_components/jquery/src/css/defaultDisplay.js -> mydjango/assets/java/jquery/src/css/defaultDisplay.js
+#	renamed:    assets/bower_components/jquery/src/css/hiddenVisibleSelectors.js -> mydjango/assets/java/jquery/src/css/hiddenVisibleSelectors.js
+#	renamed:    assets/bower_components/jquery/src/css/support.js -> mydjango/assets/java/jquery/src/css/support.js
+#	renamed:    assets/bower_components/jquery/src/css/swap.js -> mydjango/assets/java/jquery/src/css/swap.js
+#	renamed:    assets/bower_components/jquery/src/css/var/cssExpand.js -> mydjango/assets/java/jquery/src/css/var/cssExpand.js
+#	renamed:    assets/bower_components/jquery/src/css/var/getStyles.js -> mydjango/assets/java/jquery/src/css/var/getStyles.js
+#	renamed:    assets/bower_components/jquery/src/css/var/isHidden.js -> mydjango/assets/java/jquery/src/css/var/isHidden.js
+#	renamed:    assets/bower_components/jquery/src/css/var/rmargin.js -> mydjango/assets/java/jquery/src/css/var/rmargin.js
+#	renamed:    assets/bower_components/jquery/src/css/var/rnumnonpx.js -> mydjango/assets/java/jquery/src/css/var/rnumnonpx.js
+#	renamed:    assets/bower_components/jquery/src/data.js -> mydjango/assets/java/jquery/src/data.js
+#	renamed:    assets/bower_components/jquery/src/data/Data.js -> mydjango/assets/java/jquery/src/data/Data.js
+#	renamed:    assets/bower_components/jquery/src/data/accepts.js -> mydjango/assets/java/jquery/src/data/accepts.js
+#	renamed:    assets/bower_components/jquery/src/data/var/data_priv.js -> mydjango/assets/java/jquery/src/data/var/data_priv.js
+#	renamed:    assets/bower_components/jquery/src/data/var/data_user.js -> mydjango/assets/java/jquery/src/data/var/data_user.js
+#	renamed:    assets/bower_components/jquery/src/deferred.js -> mydjango/assets/java/jquery/src/deferred.js
+#	renamed:    assets/bower_components/jquery/src/deprecated.js -> mydjango/assets/java/jquery/src/deprecated.js
+#	renamed:    assets/bower_components/jquery/src/dimensions.js -> mydjango/assets/java/jquery/src/dimensions.js
+#	renamed:    assets/bower_components/jquery/src/effects.js -> mydjango/assets/java/jquery/src/effects.js
+#	renamed:    assets/bower_components/jquery/src/effects/Tween.js -> mydjango/assets/java/jquery/src/effects/Tween.js
+#	renamed:    assets/bower_components/jquery/src/effects/animatedSelector.js -> mydjango/assets/java/jquery/src/effects/animatedSelector.js
+#	renamed:    assets/bower_components/jquery/src/event.js -> mydjango/assets/java/jquery/src/event.js
+#	renamed:    assets/bower_components/jquery/src/event/alias.js -> mydjango/assets/java/jquery/src/event/alias.js
+#	renamed:    assets/bower_components/jquery/src/event/support.js -> mydjango/assets/java/jquery/src/event/support.js
+#	renamed:    assets/bower_components/jquery/src/exports/amd.js -> mydjango/assets/java/jquery/src/exports/amd.js
+#	renamed:    assets/bower_components/jquery/src/exports/global.js -> mydjango/assets/java/jquery/src/exports/global.js
+#	renamed:    assets/bower_components/jquery/src/intro.js -> mydjango/assets/java/jquery/src/intro.js
+#	renamed:    assets/bower_components/jquery/src/jquery.js -> mydjango/assets/java/jquery/src/jquery.js
+#	renamed:    assets/bower_components/jquery/src/manipulation.js -> mydjango/assets/java/jquery/src/manipulation.js
+#	renamed:    assets/bower_components/jquery/src/manipulation/_evalUrl.js -> mydjango/assets/java/jquery/src/manipulation/_evalUrl.js
+#	renamed:    assets/bower_components/jquery/src/manipulation/support.js -> mydjango/assets/java/jquery/src/manipulation/support.js
+#	renamed:    assets/bower_components/jquery/src/manipulation/var/rcheckableType.js -> mydjango/assets/java/jquery/src/manipulation/var/rcheckableType.js
+#	renamed:    assets/bower_components/jquery/src/offset.js -> mydjango/assets/java/jquery/src/offset.js
+#	renamed:    assets/bower_components/jquery/src/outro.js -> mydjango/assets/java/jquery/src/outro.js
+#	renamed:    assets/bower_components/jquery/src/queue.js -> mydjango/assets/java/jquery/src/queue.js
+#	renamed:    assets/bower_components/jquery/src/queue/delay.js -> mydjango/assets/java/jquery/src/queue/delay.js
+#	renamed:    assets/bower_components/jquery/src/selector-native.js -> mydjango/assets/java/jquery/src/selector-native.js
+#	renamed:    assets/bower_components/jquery/src/selector-sizzle.js -> mydjango/assets/java/jquery/src/selector-sizzle.js
+#	renamed:    assets/bower_components/jquery/src/selector.js -> mydjango/assets/java/jquery/src/selector.js
+#	renamed:    assets/bower_components/jquery/src/serialize.js -> mydjango/assets/java/jquery/src/serialize.js
+#	renamed:    assets/bower_components/jquery/src/sizzle/dist/sizzle.js -> mydjango/assets/java/jquery/src/sizzle/dist/sizzle.js
+#	renamed:    assets/bower_components/jquery/src/sizzle/dist/sizzle.min.js -> mydjango/assets/java/jquery/src/sizzle/dist/sizzle.min.js
+#	renamed:    assets/bower_components/jquery/src/sizzle/dist/sizzle.min.map -> mydjango/assets/java/jquery/src/sizzle/dist/sizzle.min.map
+#	renamed:    assets/bower_components/jquery/src/traversing.js -> mydjango/assets/java/jquery/src/traversing.js
+#	renamed:    assets/bower_components/jquery/src/traversing/findFilter.js -> mydjango/assets/java/jquery/src/traversing/findFilter.js
+#	renamed:    assets/bower_components/jquery/src/traversing/var/rneedsContext.js -> mydjango/assets/java/jquery/src/traversing/var/rneedsContext.js
+#	renamed:    assets/bower_components/jquery/src/var/arr.js -> mydjango/assets/java/jquery/src/var/arr.js
+#	renamed:    assets/bower_components/jquery/src/var/class2type.js -> mydjango/assets/java/jquery/src/var/class2type.js
+#	renamed:    assets/bower_components/jquery/src/var/concat.js -> mydjango/assets/java/jquery/src/var/concat.js
+#	renamed:    assets/bower_components/jquery/src/var/hasOwn.js -> mydjango/assets/java/jquery/src/var/hasOwn.js
+#	renamed:    assets/bower_components/jquery/src/var/indexOf.js -> mydjango/assets/java/jquery/src/var/indexOf.js
+#	renamed:    assets/bower_components/jquery/src/var/pnum.js -> mydjango/assets/java/jquery/src/var/pnum.js
+#	renamed:    assets/bower_components/jquery/src/var/push.js -> mydjango/assets/java/jquery/src/var/push.js
+#	renamed:    assets/bower_components/jquery/src/var/rnotwhite.js -> mydjango/assets/java/jquery/src/var/rnotwhite.js
+#	renamed:    assets/bower_components/jquery/src/var/slice.js -> mydjango/assets/java/jquery/src/var/slice.js
+#	renamed:    assets/bower_components/jquery/src/var/strundefined.js -> mydjango/assets/java/jquery/src/var/strundefined.js
+#	renamed:    assets/bower_components/jquery/src/var/support.js -> mydjango/assets/java/jquery/src/var/support.js
+#	renamed:    assets/bower_components/jquery/src/var/toString.js -> mydjango/assets/java/jquery/src/var/toString.js
+#	renamed:    assets/bower_components/jquery/src/wrap.js -> mydjango/assets/java/jquery/src/wrap.js
+#	renamed:    assets/bower_components/html5-boilerplate/img/.gitignore -> mydjango/libs/templatetags/__init__.py
+#	new file:   mydjango/libs/templatetags/custom_markdown.py
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	status.txt

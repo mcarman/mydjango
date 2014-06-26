@@ -1,0 +1,27 @@
+{
+  "name": "mydjango",
+  "version": "0.0.0",
+  "authors": [
+    "mcarman <carman.md@live.com>"
+  ],
+  "description": "django_tutorial_blog_ng on skel framework",
+  "main": "manage.py",
+  "keywords": [
+    "django",
+    "skel",
+    "AJAX"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "html5-boilerplate": "~4.3.0"
+  }
+}

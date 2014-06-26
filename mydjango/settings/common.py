@@ -204,6 +204,9 @@ THIRD_PARTY_APPS = (
 
     # Asynchronous task queue:
     'djcelery',
+
+    #test coverage helper
+    'django_jenkins',
 )
 
 LOCAL_APPS = (
@@ -214,6 +217,16 @@ LOCAL_APPS = (
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 ########## END APP CONFIGURATION
 
+# define test coverage task modules
+JENKINS_TASKS = (
+    'django_jenkins.tasks.run_pylint',
+    'django_jenkins.tasks.with_coverage',
+)
+
+# which apps for django-jenkins
+PROJECT_APPS = [
+    'apps.blogengine',
+]
 
 ########## LOGGING CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#logging

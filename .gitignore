@@ -24,3 +24,7 @@ bower.json
 # unmodified boiler plate or std files
 mydjango/assets/bower_components/
 mydjango/assets/jquery/
+
+#reports
+reports/
+htmlcov/

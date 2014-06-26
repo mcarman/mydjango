@@ -96,12 +96,14 @@ STATIC_ROOT = normpath(join(DJANGO_ROOT, 'static'))
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = '/static/'
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
+# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/
+#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
     normpath(join(DJANGO_ROOT, 'assets')),
 )
 
-# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
+# See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/
+#staticfiles-finders
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -117,7 +119,8 @@ SECRET_KEY = r"u4f+so*mo*iozo%w37da1+0iff0hi4035f5_9=z+)rv+8qya11"
 
 
 ########## FIXTURE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
+# See: https://docs.djangoproject.com/en/dev/ref/settings/
+#std:setting-FIXTURE_DIRS
 FIXTURE_DIRS = (
     normpath(join(DJANGO_ROOT, 'fixtures')),
 )
@@ -125,7 +128,8 @@ FIXTURE_DIRS = (
 
 
 ########## TEMPLATE CONFIGURATION
-# See: https://docs.djangoproject.com/en/dev/ref/settings/#template-context-processors
+# See: https://docs.djangoproject.com/en/dev/ref/settings/
+#template-context-processors
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.debug',
@@ -202,6 +206,7 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
+    'apps.blogengine',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -217,7 +222,7 @@ LOGGING = {
     'filters': {
     'require_debug_false': {
         '()': 'django.utils.log.RequireDebugFalse'
-        }
+    }
     },
     'handlers': {
         'mail_admins': {
@@ -242,10 +247,12 @@ LOGGING = {
 
 
 ########## CELERY CONFIGURATION
-# See: http://celery.readthedocs.org/en/latest/configuration.html#celery-task-result-expires
+# See: http://celery.readthedocs.org/en/latest/configuration.html
+#celery-task-result-expires
 CELERY_TASK_RESULT_EXPIRES = timedelta(minutes=30)
 
-# See: http://docs.celeryproject.org/en/master/configuration.html#std:setting-CELERY_CHORD_PROPAGATES
+# See: http://docs.celeryproject.org/en/master/configuration.html
+#std:setting-CELERY_CHORD_PROPAGATES
 CELERY_CHORD_PROPAGATES = True
 
 # See: http://celery.github.com/celery/django/
@@ -260,18 +267,20 @@ WSGI_APPLICATION = 'wsgi.application'
 
 
 ########## COMPRESSION CONFIGURATION
-# See: http://django_compressor.readthedocs.org/en/latest/settings/#django.conf.settings.COMPRESS_ENABLED
+# See: http://django_compressor.readthedocs.org/en/latest/settings/
+
+#django.conf.settings.COMPRESS_ENABLED
 COMPRESS_ENABLED = True
 
-# See: http://django-compressor.readthedocs.org/en/latest/settings/#django.conf.settings.COMPRESS_CSS_HASHING_METHOD
+#django.conf.settings.COMPRESS_CSS_HASHING_METHOD
 COMPRESS_CSS_HASHING_METHOD = 'content'
 
-# See: http://django_compressor.readthedocs.org/en/latest/settings/#django.conf.settings.COMPRESS_CSS_FILTERS
+#django.conf.settings.COMPRESS_CSS_FILTERS
 COMPRESS_CSS_FILTERS = [
     'compressor.filters.template.TemplateFilter',
 ]
 
-# See: http://django_compressor.readthedocs.org/en/latest/settings/#django.conf.settings.COMPRESS_JS_FILTERS
+#django.conf.settings.COMPRESS_JS_FILTERS
 COMPRESS_JS_FILTERS = [
     'compressor.filters.template.TemplateFilter',
 ]

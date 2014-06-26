@@ -29,5 +29,5 @@ urlpatterns = patterns('',
         )),
 
 #     # Post RSS feed
-#     url(r'^feeds/posts/$', PostsFeed()),
+    url(r'^feeds/posts/$', PostsFeed()),
 )

@@ -49,7 +49,7 @@ class Post(models.Model):
     text = models.TextField()
     slug = models.SlugField(max_length=40, unique=True)
     author = models.ForeignKey(User)
-    # site = models.ForeignKey(Site)
+    site = models.ForeignKey(Site)
     # category = models.ForeignKey(Category, blank=True, null=True)
     # tags = models.ManyToManyField(Tag, blank=True, null=True)
 

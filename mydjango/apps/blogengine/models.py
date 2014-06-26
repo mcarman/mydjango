@@ -47,7 +47,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     pub_date = models.DateTimeField()
     text = models.TextField()
-    # slug = models.SlugField(max_length=40, unique=True)
+    slug = models.SlugField(max_length=40, unique=True)
     # author = models.ForeignKey(User)
     # site = models.ForeignKey(Site)
     # category = models.ForeignKey(Category, blank=True, null=True)

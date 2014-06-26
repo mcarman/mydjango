@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
-#site ID required for flatpages
+#site ID required for sites module
 Site_ID = 1
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -49,7 +49,7 @@ THIRD_PARTY_APPS = (
 )
 
 LOCAL_APPS = (
-    'blogengine',
+    'app.blogengine',
 )
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS

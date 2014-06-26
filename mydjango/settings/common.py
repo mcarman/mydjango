@@ -7,7 +7,6 @@ from sys import path
 
 from djcelery import setup_loader
 
-
 ########## PATH CONFIGURATION
 # Absolute filesystem path to the Django project directory:
 DJANGO_ROOT = dirname(dirname(abspath(__file__)))
@@ -94,7 +93,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = normpath(join(DJANGO_ROOT, 'static'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
-STATIC_URL = '/static/'
+STATIC_URL = '/assets/'
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/
 #std:setting-STATICFILES_DIRS
@@ -114,7 +113,7 @@ STATICFILES_FINDERS = (
 
 ########## SECRET CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-SECRET_KEY = r"u4f+so*mo*iozo%w37da1+0iff0hi4035f5_9=z+)rv+8qya11"
+SECRET_KEY = 'o@v9*ds*&e+j0ead(!j2h%iewn_1@-!pkf%ml!-1=^6-*(doci'
 ########## END SECRET CONFIGURATION
 
 
@@ -186,6 +185,7 @@ DJANGO_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.syndication',
+    'django.contrib.flatpages',
 
     # Useful template tags:
     'django.contrib.humanize',

@@ -50,7 +50,8 @@ CACHES = {
 # See: http://docs.celeryq.org/en/latest/configuration.html#celery-always-eager
 CELERY_ALWAYS_EAGER = True
 
-# See: http://docs.celeryproject.org/en/latest/configuration.html#celery-eager-propagates-exceptions
+# See: http://docs.celeryproject.org/en/latest/configuration.html
+#celery-eager-propagates-exceptions
 CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
 ########## END CELERY CONFIGURATION
 

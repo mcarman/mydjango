@@ -9,9 +9,11 @@ from djcelery import setup_loader
 
 ########## PATH CONFIGURATION
 # Absolute filesystem path to the Django project directory:
+#/home/mcarman/workspace/mydjango/mydjango
 DJANGO_ROOT = dirname(dirname(abspath(__file__)))
 
 # Absolute filesystem path to the top-level project folder:
+#/home/mcarman/workspace/mydjango (loc of manage.py)
 SITE_ROOT = dirname(DJANGO_ROOT)
 
 # Site name:
@@ -35,7 +37,7 @@ TEMPLATE_DEBUG = DEBUG
 ########## MANAGER CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ('Your Name', 'your_email@example.com'),
+    ('mcarman', 'mcarman@example.com'),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -93,7 +95,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = normpath(join(DJANGO_ROOT, 'static'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
-STATIC_URL = '/assets/'
+STATIC_URL = '/static/'
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/
 #std:setting-STATICFILES_DIRS
@@ -149,6 +151,7 @@ TEMPLATE_LOADERS = (
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
 TEMPLATE_DIRS = (
     normpath(join(DJANGO_ROOT, 'templates')),
+    normpath(join(DJANGO_ROOT, 'libs')),
 )
 ########## END TEMPLATE CONFIGURATION
 
@@ -225,7 +228,7 @@ JENKINS_TASKS = (
 
 # which apps for django-jenkins
 PROJECT_APPS = [
-    'apps.blogengine',
+    'blogengine',
 ]
 
 ########## LOGGING CONFIGURATION

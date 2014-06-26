@@ -3,6 +3,7 @@
 
 from os.path import join, normpath
 
+# Load common settings from common.py
 from common import *
 
 
@@ -70,7 +71,9 @@ MIDDLEWARE_CLASSES += (
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': False,
-}
+# DEBUG_TOOLBAR_CONFIG = {
+#     'INTERCEPT_REDIRECTS': False,
+# }
+
+DEBUG_TOOLBAR_PATCH_SETTINGS = False
 ########## END TOOLBAR CONFIGURATION

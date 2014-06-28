@@ -21,6 +21,7 @@ SITE_NAME = basename(DJANGO_ROOT)
 
 # Add our project to our pythonpath, this way we don't need to type our project
 # name in our dotted import paths:
+# should be /home/mcarman/.virtualenvs/mydjango
 path.append(DJANGO_ROOT)
 ########## END PATH CONFIGURATION
 
@@ -228,7 +229,7 @@ JENKINS_TASKS = (
 
 # which apps for django-jenkins
 PROJECT_APPS = [
-    'blogengine',
+    'apps.blogengine',
 ]
 
 ########## LOGGING CONFIGURATION

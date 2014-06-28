@@ -1,8 +1,8 @@
 #blogengine.urls
 from django.conf.urls import patterns, url
 from django.views.generic import ListView, DetailView
-from blogengine.models import Post, Category, Tag
-from blogengine.views import CategoryListView, TagListView, PostsFeed
+from apps.blogengine.models import Post, Category, Tag
+from apps.blogengine.views import CategoryListView, TagListView, PostsFeed
 
 urlpatterns = patterns('',
     # Index

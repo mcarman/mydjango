@@ -1,7 +1,7 @@
 #blogengine.views
 from django.shortcuts import render
 from django.views.generic import ListView
-from blogengine.models import Category, Post, Tag
+from apps.blogengine.models import Category, Post, Tag
 from django.contrib.syndication.views import Feed
 
 

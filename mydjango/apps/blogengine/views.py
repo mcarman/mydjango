@@ -1,4 +1,4 @@
-#blogengine.views
+# apps.blogengine.views
 from django.shortcuts import render
 from django.views.generic import ListView
 from apps.blogengine.models import Category, Post, Tag

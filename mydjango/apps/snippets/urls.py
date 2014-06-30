@@ -1,7 +1,6 @@
 # apps.snippets.urls
 from django.conf.urls import patterns, url
-from apps.snippets.models import Snippet
-from apps.snippets.views import snippet_list, snippet_detail
+from rest_framework.urlpatterns import format_suffix_patterns
 
 
 urlpatterns = patterns('apps.snippets.views',
@@ -10,3 +9,5 @@ urlpatterns = patterns('apps.snippets.views',
     # list the details of selected snippet
     url(r'^snippets/(?P<pk>[0-9]+)/$', 'snippet_detail'),
 )
+
+urlpatterns = format_suffix_patterns(urlpatterns)

@@ -4,6 +4,7 @@ from snippets.serializers import SnippetSerializer, UserSerializer
 from rest_framework import mixins
 from rest_framework import generics
 from django.contrib.auth.models import User
+from rest_framework import permissions
 
 
 # list of snippets, and then check if it is available
@@ -11,6 +12,7 @@ class SnippetList(mixins.ListModelMixin,
                   mixins.CreateModelMixin,
                   generics.GenericAPIView):
     queryset = Snippet.objects.all()
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     serializer_class = SnippetSerializer
 
     def get(self, request, *args, **kwargs):
@@ -27,6 +29,7 @@ class SnippetList(mixins.ListModelMixin,
                   mixins.CreateModelMixin,
                   generics.GenericAPIView):
     queryset = Snippet.objects.all()
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     serializer_class = SnippetSerializer
 
     def get(self, request, *args, **kwargs):

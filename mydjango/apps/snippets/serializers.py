@@ -10,7 +10,7 @@ class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Snippet
         fields = ('id', 'title', 'code', 'linenos', 'language', 'style',)
-
+        owner = serializers.Field(source='owner.username')
 
     def restore_object(self, attrs, instance=None):
     # Create or update a new snippet instance, given a dictionary

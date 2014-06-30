@@ -1,4 +1,4 @@
-#blogengine.urls
+#blogengine.url
 from django.conf.urls import patterns, url
 from django.views.generic import ListView, DetailView
 from apps.blogengine.models import Post, Category, Tag

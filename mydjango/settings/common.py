@@ -218,10 +218,10 @@ LOCAL_APPS = (
     'apps.blogengine',
 
     # code snippit storage/retreival
-    'snippits',
+    'apps.snippets',
 
     # REST Framework and serializer
-    'REST',
+    'apps.REST',
 )
 
 

@@ -15,14 +15,17 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     # Blog URLs
-    url(r'', include('apps.blogengine.urls')),
+    url(r'^blog/', include('apps.blogengine.urls')),
 
-    # Flat pages
-    url(r'', include('django.contrib.flatpages.urls')),
+    # Flat URLs
+    url(r'^flat/', include('django.contrib.flatpages.urls')),
+
+    # snippet URLs
+    url(r'', include('apps.snippets.urls')),
 )
 
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += patterns('',
-        url(r'^__debug__/', include(debug_toolbar.urls)),
-    )
+# if settings.DEBUG:
+#     import debug_toolbar
+#     urlpatterns += patterns('',
+#         url(r'^__debug__/', include(debug_toolbar.urls)),
+#     )

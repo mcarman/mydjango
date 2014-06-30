@@ -27,8 +27,6 @@ class Snippet(models.Model):
 
     class Meta:
         ordering = ('-created',)
-owner = models.ForeignKey('auth.User', related_name='snippets')
-highlighted = models.TextField()
 
     def save(self, *args, **kwargs):
         # Use the `pygments` library to create a highlighted HTML

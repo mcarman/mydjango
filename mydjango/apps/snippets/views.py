@@ -1,6 +1,6 @@
 # apps.snippets.views
-from snippets.models import Snippet
-from snippets.serializers import SnippetSerializer, UserSerializer
+from apps.snippets.models import Snippet
+from apps.snippets.serializers import SnippetSerializer, UserSerializer
 from rest_framework import mixins
 from rest_framework import generics
 from django.contrib.auth.models import User
@@ -8,9 +8,7 @@ from rest_framework import permissions
 
 
 # list of snippets, and then check if it is available
-class SnippetList(mixins.ListModelMixin,
-                  mixins.CreateModelMixin,
-                  generics.GenericAPIView):
+class SnippetList(generics.ListCreateAPIView):
     queryset = Snippet.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     serializer_class = SnippetSerializer
@@ -25,18 +23,19 @@ class SnippetList(mixins.ListModelMixin,
         obj.owner = self.request.user
 
 
-class SnippetList(mixins.ListModelMixin,
-                  mixins.CreateModelMixin,
-                  generics.GenericAPIView):
+class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Snippet.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     serializer_class = SnippetSerializer
 
     def get(self, request, *args, **kwargs):
-        return self.list(request, *args, **kwargs)
+        return self.retrieve(request, *args, **kwargs)
 
-    def post(self, request, *args, **kwargs):
-        return self.create(request, *args, **kwargs)
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
 
     def pre_save(self, obj):
         obj.owner = self.request.user

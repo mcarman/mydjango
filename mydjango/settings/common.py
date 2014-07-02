@@ -240,6 +240,11 @@ PROJECT_APPS = [
     'apps.blogengine',
 ]
 
+########## RESTful API Environment
+REST_FRAMEWORK = {
+    'PAGINATE_BY': 10
+}
+
 ########## LOGGING CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#logging
 LOGGING = {

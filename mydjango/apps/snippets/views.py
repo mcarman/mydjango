@@ -5,6 +5,7 @@ from rest_framework import mixins
 from rest_framework import generics
 from django.contrib.auth.models import User
 from rest_framework import permissions
+from apps.snippets.permissions import IsOwnerOrReadOnly
 
 
 # list of snippets, and then check if it is available
@@ -25,7 +26,8 @@ class SnippetList(generics.ListCreateAPIView):
 
 class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Snippet.objects.all()
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly)
     serializer_class = SnippetSerializer
 
     def get(self, request, *args, **kwargs):

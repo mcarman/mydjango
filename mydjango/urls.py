@@ -22,6 +22,10 @@ urlpatterns = patterns('',
 
     # snippet URLs
     url(r'', include('apps.snippets.urls')),
+
+    # Login to REST api
+    url(r'^api-auth/', include('apps.REST.urls',
+                               namespace='REST')),
 )
 
 # if settings.DEBUG:

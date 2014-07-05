@@ -517,7 +517,7 @@ class PostViewTest(BaseAcceptanceTest):
         # Create the post
         post = Post()
         post.title = 'My first post'
-        post.text = 'This is [my first blog post](http://127.0.0.1:8000/)'
+        post.text = 'This is [my first blog post](http://127.0.0.1:8000)'
         post.slug = 'my-first-post'
         post.pub_date = timezone.now()
         post.author = author

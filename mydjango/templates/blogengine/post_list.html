@@ -1,6 +1,10 @@
-{% extends "blogengine/includes/base.html" %}
+{% extends "includes/base.html" %}
 
     {% load custom_markdown %}
+
+    {% block title %}
+        MyBlog
+    {% endblock %}
 
     {% block content %}
         {% if object_list %}

@@ -21,7 +21,7 @@ urlpatterns = patterns('',
     url(r'^flat/', include('django.contrib.flatpages.urls')),
 
     # Links pages
-    url(r'^link/', include('apps.linkengine.urls')),
+    url(r'', include('apps.linkengine.urls')),
 )
 
 if settings.DEBUG:

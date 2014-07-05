@@ -1,7 +1,11 @@
-{% extends "blogengine/includes/base.html" %}
+{% extends "includes/base.html" %}
 
     {% load custom_markdown %}
 
+    {% block title %}
+        MyBlog
+    {% endblock %}
+    
     {% block content %}
         <div class="post col-md-12">
         <h1>{{ object.title }}</h1>

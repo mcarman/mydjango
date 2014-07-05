@@ -18,7 +18,10 @@ urlpatterns = patterns('',
     url(r'', include('apps.blogengine.urls')),
 
     # Flat pages
-    url(r'', include('django.contrib.flatpages.urls')),
+    url(r'^flat/', include('django.contrib.flatpages.urls')),
+
+    # Links pages
+    #url(r'', include('apps.links.urls')),
 )
 
 if settings.DEBUG:

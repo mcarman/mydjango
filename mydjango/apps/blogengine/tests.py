@@ -180,6 +180,10 @@ class AdminTest(BaseAcceptanceTest):
         # Check 'Log in' in response
         self.assertTrue('Log in' in response.content)
 
+    def test_create_link(self):
+        # Log in
+        self.client.login(username='bobsmith', password="password")
+
     def test_create_category(self):
         # Log in
         self.client.login(username='bobsmith', password="password")
@@ -815,7 +819,7 @@ class FlatPageViewTest(BaseAcceptanceTest):
     def test_create_flat_page(self):
         # Create flat page
         page = FlatPage()
-        page.url = '/about/'
+        page.url = '/flat/about/'
         page.title = 'About me'
         page.content = 'All about me'
         page.save()
@@ -831,7 +835,7 @@ class FlatPageViewTest(BaseAcceptanceTest):
         self.assertEquals(only_page, page)
 
         # Check data correct
-        self.assertEquals(only_page.url, '/about/')
+        self.assertEquals(only_page.url, '/flat/about/')
         self.assertEquals(only_page.title, 'About me')
         self.assertEquals(only_page.content, 'All about me')
 

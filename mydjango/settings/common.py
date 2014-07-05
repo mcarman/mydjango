@@ -4,7 +4,7 @@
 from datetime import timedelta
 from os.path import abspath, basename, dirname, join, normpath
 from sys import path
-
+from django.core.urlresolvers import reverse_lazy
 from djcelery import setup_loader
 
 ########## PATH CONFIGURATION
@@ -59,6 +59,15 @@ DATABASES = {
     }
 }
 ########## END DATABASE CONFIGURATION
+
+
+########## LOGIN CONFIGURATION
+LOGIN_URL = reverse_lazy('login')
+
+LOGIN_REDIRECT_URL = reverse_lazy('home')
+
+LOGOUT_URL = reverse_lazy('logout')
+########## END LOGIN CONFIGURATION
 
 
 ########## GENERAL CONFIGURATION

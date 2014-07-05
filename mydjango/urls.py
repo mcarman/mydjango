@@ -14,6 +14,14 @@ urlpatterns = patterns('',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
 
+    # Login template
+    url(r'^login/$', 'django.contrib.auth.views.login', {
+    'template_name': 'login.html'}, name="login"),
+
+    # logout landing page
+    url(r'^logout/$', 'django.contrib.auth.views.logout_then_login',
+    name="logout"),
+
     # Blog URLs
     url(r'', include('apps.blogengine.urls')),
 

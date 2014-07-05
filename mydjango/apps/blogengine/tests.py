@@ -180,10 +180,6 @@ class AdminTest(BaseAcceptanceTest):
         # Check 'Log in' in response
         self.assertTrue('Log in' in response.content)
 
-    def test_create_link(self):
-        # Log in
-        self.client.login(username='bobsmith', password="password")
-
     def test_create_category(self):
         # Log in
         self.client.login(username='bobsmith', password="password")

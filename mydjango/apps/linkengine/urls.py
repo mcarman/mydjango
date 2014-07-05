@@ -4,4 +4,4 @@ from views import LinkListView
 
 
 urlpatterns = patterns('',
-    url(r'^$', LinkListView.as_view(), name='links'))
+    url(r'^linklist/$', LinkListView.as_view(), name='links'))

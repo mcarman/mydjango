@@ -215,6 +215,7 @@ THIRD_PARTY_APPS = (
 
 LOCAL_APPS = (
     'apps.blogengine',
+    'apps.linkengine',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

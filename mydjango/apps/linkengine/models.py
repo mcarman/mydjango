@@ -20,6 +20,9 @@ class Link(models.Model):
     with_votes = LinkVoteCountManager()
     objects = models.Manager()  # default manager
 
+    def get_absolute_url(self):
+        return reverse("link_detail", kwargs={"pk": str(self.id)})
+
     def __unicode__(self):
         return self.title
 

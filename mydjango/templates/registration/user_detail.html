@@ -8,4 +8,7 @@
 {{ object.userprofile.bio }}
 </div>
 {% endif %}
+{% if object.username == user.username %}
+<p><a href='{% url "edit_profile" %}'>Edit my profile</a></p>
+{% endif %}
 {% endblock %}

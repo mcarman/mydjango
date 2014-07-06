@@ -218,8 +218,11 @@ THIRD_PARTY_APPS = (
     # Asynchronous task queue:
     'djcelery',
 
-    #test coverage helper
+    # Test coverage helper
     'django_jenkins',
+
+    # Login/registration help
+    'registration',
 )
 
 LOCAL_APPS = (

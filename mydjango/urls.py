@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.conf.urls import patterns, include, url
 from django.conf import settings
+from apps.linkengine.views import UserProfileDetailView
 
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/admin/
@@ -16,11 +17,16 @@ urlpatterns = patterns('',
 
     # Login template
     url(r'^login/$', 'django.contrib.auth.views.login', {
-    'template_name': 'login.html'}, name="login"),
+    'template_name': 'registration/login.html'}, name="login"),
 
     # logout landing page
     url(r'^logout/$', 'django.contrib.auth.views.logout_then_login',
     name="logout"),
+
+    # Accounts landing page
+    url(r'^accounts/', include('registration.backends.simple.urls')),
+
+    url(r'^users/(?P<slug>\w+)/$', UserProfileDetailView.as_view(), name="profile"),
 
     # Blog URLs
     url(r'', include('apps.blogengine.urls')),

@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required as auth
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 from apps.linkengine.views import UserProfileDetailView, UserProfileEditView
-
+from apps.linkengine.views import VoteFormView, LinkUpdateView
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/admin/
 #hooking-adminsite-instances-into-your-urlconf
@@ -48,6 +48,9 @@ urlpatterns = patterns('',
 
     url(r'^link/delete/(?P<pk>\d+)/$', auth(LinkDeleteView.as_view()),
         name='link_delete'),
+
+    # vote page
+    url(r'^vote/$', auth(VoteFormView.as_view()), name="vote"),
 )
 
 if settings.DEBUG:

@@ -1,11 +1,12 @@
 # apps.links.views
 from django.views.generic import ListView, DetailView
 from django.views.generic import UpdateView, DeleteView
-from django.views.generic.edit import CreateView
-from models import Link, UserProfile
+from django.views.generic.edit import CreateView, FormView
+from apps.linkengine.models import Link, UserProfile, Vote
 from django.contrib.auth import get_user_model
-from forms import UserProfileForm, LinkForm
+from apps.linkengine.forms import UserProfileForm, LinkForm, VoteForm
 from django.core.urlresolvers import reverse, reverse_lazy
+from django.shortcuts import redirect, get_object_or_404
 
 
 # list of links
@@ -69,3 +70,29 @@ class LinkUpdateView(UpdateView):
 class LinkDeleteView(DeleteView):
     model = Link
     success_url = reverse_lazy("home")
+
+
+# vote and record votte status re said link
+class VoteFormView(FormView):
+    form_class = VoteForm
+
+    def form_valid(self, form):
+        link = get_object_or_404(Link, pk=form.data["link"])
+        user = self.request.user
+        prev_votes = Vote.objects.filter(voter=user, link=link)
+        has_voted = (prev_votes.count() > 0)
+
+        if not has_voted:
+            # add vote
+            Vote.objects.create(voter=user, link=link)
+            print("voted")
+        else:
+            # delete vote
+            prev_votes[0].delete()
+            print("unvoted")
+
+        return redirect("home")
+
+    def form_invalid(self, form):
+        print("invalid")
+        return redirect("home")

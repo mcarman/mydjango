@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required as auth
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 from apps.linkengine.views import UserProfileDetailView, UserProfileEditView
-from apps.linkengine.views import VoteFormView, LinkUpdateView
+from apps.linkengine.views import VoteFormView, LinkUpdateView, LinkDeleteView
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/admin/
 #hooking-adminsite-instances-into-your-urlconf
@@ -31,7 +31,7 @@ urlpatterns = patterns('',
     url(r'^users/(?P<slug>\w+)/$', UserProfileDetailView.as_view(), name="profile"),
 
     # Edit user profile
-    url(r'^edit_profile/$', auth(UserProfileEditView.as_view()), name="edit_profile"),
+    url(r'^edit_profile/$', (UserProfileEditView.as_view()), name="edit_profile"),
 
 
     # Blog URLs
@@ -43,14 +43,14 @@ urlpatterns = patterns('',
     # Links pages
     url(r'', include('apps.linkengine.urls')),
 
-    url(r'^link/update/(?P<pk>\d+)/$', auth(LinkUpdateView.as_view()),
+    url(r'^link/update/(?P<pk>\d+)/$', (LinkUpdateView.as_view()),
         name='link_update'),
 
-    url(r'^link/delete/(?P<pk>\d+)/$', auth(LinkDeleteView.as_view()),
+    url(r'^link/delete/(?P<pk>\d+)/$', (LinkDeleteView.as_view()),
         name='link_delete'),
 
     # vote page
-    url(r'^vote/$', auth(VoteFormView.as_view()), name="vote"),
+    url(r'^vote/$', (VoteFormView.as_view()), name="vote"),
 )
 
 if settings.DEBUG:
